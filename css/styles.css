@@ -621,13 +621,15 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 96px 16px;
   /* padding: 100px 0; */
   display: flex;
-   width: 100%;
+   /* width: 100%; */
 }
 
 .footer-container {
+
+  
   /* display: flex;
   /* align-items: baseline; */
-    max-width: 320px;
+     max-width: 320px; 
     padding-left: 16px;
     padding-right: 16px;
     margin-left: auto;
@@ -638,16 +640,20 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .container {
   /* max-width: 1158px; */
-   max-width: 320px;
-    padding-left: 16px;
+   
+    /* padding-left: 16px;
     padding-right: 16px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; */
     flex-wrap: wrap;
   
 }
 
 .footer-wrap-logo {
+  width: 100%; 
+  padding-bottom: 72px;
+ 
+ 
 }
 
 .footer-logo {
@@ -659,7 +665,8 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   background-color: #2e2f42;
-  display: inline-block;
+  display: inline-block
+ 
 }
 
 .footer-logo-iris {
@@ -671,8 +678,13 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   background: #2e2f42;
-  display: inline-block;
+  /* display: inline-block; */
   margin-bottom: 16px;
+
+ display: flex;
+  justify-content: center;
+  text-align: center;
+ 
 }
 
 .footer-text {
@@ -692,22 +704,33 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-wrap-soc {
-  margin-right: 80px;
+  /* margin-right: 80px; */
+
+  padding-bottom: 72px;
 }
 
 .footer-soc-text {
-  font-weight: 500;
+  /* font-weight: 500; */
+  font-weight: 400;
   color: #ffffff;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
+
+
+  text-align: center;
+        display: flex;
+        justify-content: center;
+  
 }
 
 .footer-soc-list {
   display: flex;
   gap: 16px;
-   flex-wrap: wrap;
+
+  justify-content: center;
+ 
 }
 
 .footer-soc-item {
@@ -754,15 +777,25 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background: #4d5ae5;
   border: none;
   cursor: pointer;
-  min-width: 165px;
+  width: 165px;
+
 }
+
 .footer-form {
-  display: flex;
-  gap: 24px;
+   display: flex;
+  /* gap: 24px; */
+  gap: 16px;
+  flex-direction: column;
+  flex-wrap: wrap;
+    align-items: center;
+  justify-content: center;
+
 }
 
 .footer-form-input {
-  width: 264px;
+  /* width: 264px; */
+  width: 288px;
+  
   height: 40px;
   background-color: transparent;
   border-radius: 4px;
@@ -788,6 +821,10 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .footer-form-icon {
