@@ -734,6 +734,14 @@ input {
   width: 165px;
 }
 
+.footer-form-btn:hover {
+  background-color: var(--OCEAN, #404BBF);
+}
+
+.footer-form-btn:focus {
+  background-color: var(--OCEAN, #404BBF);
+}
+
 .footer-form {
   display: flex;
   gap: 16px;
