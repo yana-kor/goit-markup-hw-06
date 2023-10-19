@@ -1108,6 +1108,10 @@ input {
     gap: 24px;
   }
 
+  .team {
+    background-color: #fff;
+  }
+
   .portfolio-item {
     width: calc((100% - 24px) / 2);
   }
@@ -1232,6 +1236,7 @@ input {
   }
 
   .team {
+    background-color: #f4f4fd;
     padding: 120px 0;
   }
 
