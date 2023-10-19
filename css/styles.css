@@ -76,7 +76,6 @@ input {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-right: 76px;
 }
 
 .header-logo-text {
@@ -85,15 +84,10 @@ input {
 
 .header-open-btn {
   display: block;
-
   margin-left: auto;
   border: none;
   fill: white;
-  border-bottom: 1px solid var(--CORNFLOWER, #e7e9fc);
   background: var(--WHITE, #fff);
-  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .header-list {
@@ -178,17 +172,16 @@ input {
   width: 100vw;
   height: 100vh;
   background: #fff;
-  padding: 24px 24px 40px 16px;
+  padding: 72px 24px 40px 16px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  opacity: 0;
+  /* opacity: 0;
   visibility: hidden;
-  pointer-events: auto;
+  pointer-events: auto; */
 }
 
-.mob-menu-list {
-  padding-top: 72px;
+.mob-soc {
 }
 
 .mob-close-icon {
@@ -197,6 +190,7 @@ input {
 }
 
 .mob-close-btn {
+  color: #2e2f42;
   position: absolute;
   top: 24px;
   right: 24px;
@@ -222,15 +216,17 @@ input {
   color: var(--NAVY-BLUE, #2e2f42);
   font-family: Roboto;
   font-size: 36px;
-
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
 
+.mob-list-item {
+}
+
 .mob-contact-list {
-  margin-bottom: 48px;
+
 }
 .mob-contact-item {
   margin-bottom: 24px;
@@ -242,6 +238,7 @@ input {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  font-style: normal;
 }
 
 .mob-contact-link:hover .mob-contact-link:focus {
@@ -422,7 +419,6 @@ input {
 
 .team {
   background-color: #f4f4fd;
-  /* padding: 120px 0; */
   padding: 96px 0;
 }
 
@@ -487,7 +483,6 @@ input {
 
 .team-icon-link {
   display: block;
-  width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -581,7 +576,7 @@ input {
 
 .portfolio-list {
   display: flex;
-  /* gap: 24px; */
+
   gap: 48px;
 
   flex-wrap: wrap;
@@ -660,6 +655,8 @@ input {
   line-height: 1.5;
   letter-spacing: 0.02em;
   background: #2e2f42;
+
+  margin-bottom: 72px;
 }
 
 .footer-wrap-soc {
@@ -712,10 +709,6 @@ input {
   background-color: #31d0aa;
 }
 
-.footer-subscribe {
-  margin-left: auto;
-}
-
 .footer-form-btn {
   align-items: center;
   justify-content: center;
@@ -735,11 +728,11 @@ input {
 }
 
 .footer-form-btn:hover {
-  background-color: var(--OCEAN, #404BBF);
+  background-color: var(--OCEAN, #404bbf);
 }
 
 .footer-form-btn:focus {
-  background-color: var(--OCEAN, #404BBF);
+  background-color: var(--OCEAN, #404bbf);
 }
 
 .footer-form {
@@ -1004,7 +997,6 @@ input {
 
 .check-text-modal {
   display: inline;
- 
 }
 
 .check-text a {
@@ -1050,12 +1042,16 @@ input {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding-left: 16px;
-    padding-right: 16px;
   }
 
   .header-container {
     display: flex;
+  }
+  .header-navigation {
+    padding: 0;
+  }
+  .header-logo {
+    margin-right: 76px;
   }
 
   .header-list {
@@ -1084,6 +1080,14 @@ input {
     display: block;
   }
 
+  .header-contact-item:not(:last-child) {
+    padding-bottom: 12px;
+  }
+
+  .main-heading {
+    width: 496px;
+  }
+
   .benefits-item {
     width: calc((100% - 24px) / 2);
   }
@@ -1093,14 +1097,12 @@ input {
     gap: 72px 24px;
   }
 
-  .team {
-    padding-left: 108px;
-    padding-right: 108px;
+  .benefits-subtittle {
+    text-align: start;
   }
 
   .team-item {
-    width: calc((100% - 24px) / 2);
-    margin-bottom: 64px;
+    /* width: calc((100% - 24px) / 2); */
   }
 
   .team-item-icon {
@@ -1145,10 +1147,7 @@ input {
   .footer-container {
     display: flex;
     align-items: baseline;
-  }
-
-  .footer-wrap-logo {
-    margin-left: 108px;
+    max-width: 584px;
   }
 
   .footer-text {
@@ -1161,10 +1160,6 @@ input {
 
   .footer-soc-text {
     justify-content: start;
-  }
-
-  .footer-subscribe {
-    margin-left: 108px;
   }
 
   .footer-form {
@@ -1181,8 +1176,9 @@ input {
   }
 
   .modal {
-  width: 408px;
-  min-height: 584px;
+    width: 408px;
+    min-height: 584px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -1236,6 +1232,10 @@ input {
     line-height: 1.2;
   }
 
+  .team {
+    padding: 120px 0;
+  }
+
   .team-item {
     width: calc((100% - 24px * 3) / 4);
     margin-bottom: 64px;
@@ -1283,12 +1283,12 @@ input {
     margin-left: auto;
   }
 
-  .footer-wrap-soc {
-    margin-right: 80px;
-  }
-
   .footer-soc-text {
     font-weight: 500;
+  }
+
+  .footer-wrap-soc {
+    margin-right: 80px;
   }
 
   .footer-logo-iris {
