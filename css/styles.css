@@ -176,9 +176,9 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* opacity: 0;
+  opacity: 0;
   visibility: hidden;
-  pointer-events: auto; */
+  pointer-events: auto;
 }
 
 .mob-soc {
@@ -226,7 +226,6 @@ input {
 }
 
 .mob-contact-list {
-
 }
 .mob-contact-item {
   margin-bottom: 24px;
